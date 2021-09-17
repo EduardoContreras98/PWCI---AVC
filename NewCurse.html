@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <title>Agregar Curso - Academia Virtual Cloud</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="/icono-curso.png" />
+        <link href="styles/main.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-secondary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid" id="Head">
+              <a class="navbar-brand" href="indexLog.html">Academia Virtual Cloud</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="indexLog.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Diseño</a></li>
+                      <li><a class="dropdown-item" href="#">Programación</a></li>
+                      <li><a class="dropdown-item" href="#">Videojuegos</a></li>
+                      <li><a class="dropdown-item" href="#">Marketing</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="¿Que aprenderas hoy?" aria-label="Search">
+                </form>
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li>
+                        <div class="imgU">
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Eduardo Contreras
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="Profile.html">Mi Perfil</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="Container-miscursos">
+            <div class="card text-center bg-dark text-light" >
+              <div class="card-body">
+                <h5 class="card-title">Información del curso</h5>   
+              </div>
+            </div>
+          </div>
+          <div class="container-titulo">
+            <div class="card text-center bg-dark text-light" >
+              <div class="card-body">
+                <h5 class="card-title">Detalles</h5>   
+              </div>
+            </div>
+          </div>
+          <div class="detall">
+            <div class="card bg-dark text-light">
+                <div class="card-body ">
+                    <p><input class="form-control me-2" type="search" placeholder="Titulo del Curso" aria-label="Search" ></p>
+                    <p><input class="form-control me-2" type="search" placeholder="Descripción Corta" aria-label="Search" ></p>
+                    <p><input class="form-control me-2" type="search" placeholder="Cantidad de Niveles" aria-label="Search" ></p>
+                    <p style="width: 90%; position: relative; display: inline-block;"><select class="form-control me-2" type="search" placeholder="Categoria" aria-label="Search" >
+                      <option value="volvo">Seleccione una Categoria</option>
+                      <option value="volvo">Desarrollo de software</option>
+                    </select></p>
+                    <p style=" position: absolute; display: inline-block; margin-left: 9px; "><button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo">Agregar</button></p>
+                    <p><input class="form-control me-2" type="search" placeholder="Maestro" aria-label="Search" ></p>
+                    <p><input class="form-control me-2" type="date" aria-label="Search" ></p>
+                    <p><input class="form-control me-2" type="search" placeholder="Idiomas" aria-label="Search" ></p>
+                </div>
+              </div>
+              <br>
+              <nav>
+                <div class="nav nav-tabs bg-dark text-light" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Descripción</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Requisitos</button>
+                  <button class="nav-link" id="nav-adjunt-tab" data-bs-toggle="tab" data-bs-target="#nav-adjunt" type="button" role="tab" aria-controls="nav-adjunt" aria-selected="false">Adjuntos</button>
+                  <button class="nav-link" id="nav-content-tab" data-bs-toggle="tab" data-bs-target="#nav-content" type="button" role="tab" aria-controls="nav-content" aria-selected="false">Niveles</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body ">
+                          <p class="card-text">
+                            <input class="form-control me-2" type="text" placeholder="Descripción Larga" aria-label="Search" >
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body ">
+                          <ul>
+                              <li><p><input class="form-control me-2" type="search" placeholder="Agregue un requisito" aria-label="Search" ></p></li>  
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="nav-adjunt" role="tabpanel" aria-labelledby="nav-adjunt-tab">
+                  <div class="card bg-dark text-light">
+                      <div class="card-body ">
+                      </div>
+                    </div>
+              </div>
+                <div class="tab-pane fade" id="nav-content" role="tabpanel" aria-labelledby="nav-content-tab">
+                  <div class="card bg-dark text-light">
+                      <div class="card-body ">
+                      </div>
+                    </div>
+              </div>
+              </div>
+          </div>
+          <div class="container-info">
+            <div class="card bg-dark text-light">
+              <div class="card-body">
+                <div class="col">
+                    <div class="card bg-dark text-light">
+                      <img src="/Agregar.png" class="card-img-top" alt="..." style="width: full; height: 200px;">
+                      <div class="card-body">
+                        
+                        <p class="card-text">
+                          Este curso incluye:
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <input class="form-control me-2" type="search" placeholder="¿Que incluye?" aria-label="Search" >
+                      </div>      
+                    </div>
+                  </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="width: 345px; margin-top: 10px; ">Crear</button>
+                
+                <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header bg-dark text-light">
+                        <h5 class="modal-title " id="exampleModalLabel" style="margin-left: 37%;">Curso Creado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Se ha añadido este curso a la plataforma</label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade text-dark" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header bg-dark text-light">
+                        <h5 class="modal-title " id="exampleModalLabel" style="margin-left: 31%;">Agregar Categoria</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Nombre de la categoria:</label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Descripción:</label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer bg-dark text-light">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>

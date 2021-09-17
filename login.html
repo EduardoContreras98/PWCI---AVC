@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <title>Inicio de sesión - Academia Virtual Cloud</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="/icono-curso.png" />
+        <link href="styles/main.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-secondary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid" id="Head">
+              <a class="navbar-brand" href="indexLog.html">Academia Virtual Cloud</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Diseño</a></li>
+                      <li><a class="dropdown-item" href="#">Programación</a></li>
+                      <li><a class="dropdown-item" href="#">Videojuegos</a></li>
+                      <li><a class="dropdown-item" href="#">Marketing</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="¿Que aprenderas hoy?" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="cont">
+            <form class="login" id="form-login">
+                <h5 class="card-title"style="text-align: center;">Inicio de Sesión</h5>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Dirección de Correo Electronico</label>
+                  <input type="email" class="form-control" id="L_Correo" >
+                  <div id="emailHelp" class="form-text">No compartas tu correo electronico con nadie.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="text" class="form-control" id="L_Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Verificar Contraseña</button>
+                <p class="warnings" id="warnings"></p>
+              </form>
+              <form class="login">
+                <h5 class="card-title">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </h5>
+                <h5 class="card-title" style="text-align: center;">Registro</h5>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Dirección de Correo Electronico</label>
+                  <input type="email" class="form-control" id="R_Correo" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="R_Password">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="R_Nacimiento">
+                  </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+              </form>
+          </div>
+          <script src="jquery.js"></script>
+          <script src="validation.js"></script>
+    </body>
+</html>
